@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" "></script>
+</head>
+<body class=" ">
+    <div class="bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-700 w-full p-3 h-full ">
+        
+        <div class=" relative  flex justify-between  ">
+      <div class="  uppercase font-bold text-4xl text-orange-500">jbl</div>
+      <div>
+        <div id="cart" onclick="popup()" class=" fixed right-5 flex gap-1 bg-white w-25  p-2 rounded-lg shadow-l hover:scale-105 duration-75">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+            </svg>
+            <p id="cartBtn" class=" font-semibold text-orange-400 ">Cart</p>
+            <p id="cartCount" class="font-bold flex  bg-orange-400 h-7 w-7 text-amber-200 rounded-full  text-center items-center justify-center text-bold">0</p>
+        </div>
+      </div>
+      
+        <!-- <div class="  relative mb-16 justify-center fixed ">
+            <div id="cart" onclick="popup()" class="  flex gap-1 bg-white w-25 right-5 absolute p-2 rounded-r-lg shadow-l hover:scale-105 duration-75">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>
+                <p id="cartBtn" class=" font-semibold text-orange-400 ">Cart</p>
+                <p id="cartCount" class="font-bold flex  bg-orange-400 h-7 w-7 text-amber-200 rounded-full  text-center items-center justify-center text-bold">0</p>
+            </div>
+        </div> -->
+       
+    </div>
+          
+        <div class="grid grid-cols-2 gap-4   mt-5  mx-auto my-5 flex gap-3 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-xl ">
+            <div class=" border-2 w-3/3 h-50 shadow-lg">
+                <div class="items-center flex justify-center rounded-lg  bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-700 shadow-lg">
+                    <img class="" src="./images/favorite-1.png" alt="" srcset="">
+                </div>
+           
+                <div class="bg-slate-900 rounded-lg h-2/2 bg-slate-50 w-3/3 p-3 ">
+                   <h1 class="text-orange-500 font-semibold text-2xl flex mx-3 py-3 justify-center">JBL Black</h1>
+                  <p class=" text-orange-500 px-3 font-thin text-l text-center">MRP ₹59900.00 (Incl. of all taxes)</p>
+                  <div id="Button" class="flex justify-center mt-5 px-2">
+                    <!-- <button id="addBlack" onclick="jblBlack()" class="add cart-btn hover:scale-105 border-2 p-2 bg-orange-200 rounded-lg hover:bg-orange-300 border-amber-500 duration-100 uppercase font-semibold">Add to Cart</button> -->
+                    <button id="addBlack" onclick="jblBlack()" class=" hover:scale-105 border-2 p-2 bg-orange-500 rounded-lg hover:bg-orange-600 border-amber-700 text-white duration-100 uppercase font-semibold">Add to Cart</button>
+                    <button id="removeBlack" onclick="removerblack()"  class="remove hidden  hover:scale-105 border-2 p-2 bg-orange-500 rounded-lg text-white hover:bg-orange-600 border-amber-700 duration-100 uppercase font-semibold">Remove from  Cart</button>
+                    <!-- <button  class="cart-btn hover:scale-105 border-2 p-2 rounded-lg border-amber-500 bg-orange-200 duration-100 hover:bg-orange-300 uppercase font-semibold">Add to Cart</button> -->
+                  </div>
+                </div>
+            </div>
+
+            <div class="border-2 w-3/3 h-50 shadow-lg">
+                <div class="rounded-lg  bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-700 shadow-lg flex justify-center ">
+                    <img class="" src="./images/favorite-3.png" alt="" srcset="">
+                </div>
+           
+                <div class="bg-slate-900  h-2/2  w-3/3 p-3 ">
+                   <h1 class="text-orange-500 font-semibold text-2xl flex mx-3 py-3 justify-center">JBL RED</h1>
+                  <p class="text-orange-500 px-3 font-thin text-l text-center">MRP ₹59900.00 (Incl. of all taxes)</p>
+                  <div class="flex justify-center mt-5 px-2">
+                    <button id="addRed" onclick="jblRed()" class="add cart-btn hover:scale-105 border-2 p-2 bg-orange-500 rounded-lg hover:bg-orange-600 text-white border-amber-700 duration-100 uppercase font-semibold">Add to Cart</button>
+                    <button id="removeRed" onclick="removerred()"  class="remove hidden cart-btn hover:scale-105 border-2 p-2 bg-orange-500 rounded-lg text-white hover:bg-orange-600 border-amber-700 duration-100 uppercase font-semibold">Remove from  Cart</button>
+                  </div>
+                </div>
+            </div>
+            <div class="  border-2 w-3/3 h-50 shadow-lg ">
+                <div class=" rounded-lg  bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-700 shadow-lg flex justify-center">
+                    <img class="" src="./images/favorite-4.png" alt="" srcset="">
+                </div>
+           
+                <div class=" bg-slate-900 h-2/2 bg-slate-50 w-3/3 p-3 ">
+                   <h1 class="text-orange-500 font-semibold text-2xl flex mx-3 py-3 justify-center">JBL BLUE</h1>
+                  <p class="text-orange-500 px-3 font-thin text-l text-center">MRP ₹59900.00 (Incl. of all taxes)</p>
+                  <div class="flex  mt-5 px-2 items-center justify-center">
+                    <!-- <button class="hover:scale-105 border-2 p-2 rounded-lg  border-amber-500 hover:bg-orange-300 bg-orange-200  duration-100 uppercase font-semibold">buy now</button> -->
+                    <button id="addBlue" onclick="jblBlue()" class="cart-btn hover:scale-105 border-2 p-2 bg-orange-500 rounded-lg hover:bg-orange-600 border-amber-700 text-white duration-100 uppercase font-semibold">Add to Cart</button>
+                    <button id="removeBlue" onclick="removerBlue()" class="hidden cart-btn hover:scale-105 border-2 p-2 bg-orange-500 rounded-lg hover:bg-orange-600 text-white border-amber-500 duration-100 uppercase font-semibold">Remove from  Cart</button>
+
+                  </div>
+                </div>
+            </div>
+            <div class="  border-2 w-3/3 h-50 shadow-lg ">
+                <div class="rounded-lg  bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-700 shadow-lg flex justify-center">
+                    <img class="" src="./images/favorite-2.png" alt="" srcset="">
+                </div>
+           
+                <div class="bg-slate-900 h-2/2 bg-slate-50 w-3/3 p-3 ">
+                   <h1 class="text-orange-500 font-semibold text-2xl flex mx-3 py-3 justify-center">JBL WHITE</h1>
+                  <p class="text-orange-500 px-3 font-thin text-l text-center">MRP ₹59900.00 (Incl. of all taxes)</p>
+                  <div class="flex  mt-5 px-2 items-center justify-center">
+                    <!-- <button class="hover:scale-105 border-2 p-2 rounded-lg  border-amber-500 hover:bg-orange-300 bg-orange-200  duration-100 uppercase font-semibold">buy now</button> -->
+                    <button id="addWhite" onclick="jblWhite()" class="cart-btn hover:scale-105 border-2 p-2 bg-orange-500 rounded-lg text-white hover:bg-orange-600 border-amber-700 duration-100 uppercase font-semibold">Add to Cart</button>
+                    <button id="removewhite" onclick="removerWhite()" class="hidden cart-btn hover:scale-105 border-2 p-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 border-amber-700 duration-100 uppercase font-semibold">Remove from  Cart</button>
+
+                  </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="cartbox" class="hidden  fixed top-0 left-0 w-full h-screen bg-black/50 flex items-center justify-center ">
+            <div id="cartList" class="overflow-auto bg-white w-2/3 h-4/5 rounded-lg p-10 shadow-lg relative ">
+                <div onclick="popupno()" id="close" class=" mb-10  relative ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="  w-6 h-6 absolute right-0 hover:scale-125 duration:110 ">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                      </svg>
+                </div>
+                <!-- <p class="border-2">jkdjfd</p> -->
+                  
+                <!-- <div class="border-2 p-8 justify-between flex items-center text center ">
+                    <img class="w-14 h-14" src="./images/favorite-1.png" alt="">
+                    <p>JBl Black </p>
+                    <p>MRP ₹59900.00 (Incl. of all taxes)</p>
+                </div> -->
+                <div class="bottom-10 absolute right-10">
+               <button class="fixed hover:scale-105 border-2 p-1 right-64 bottom-24 px-5 mx-5 rounded-lg  bg-orange-200 border-amber-500 hover:bg-orange-300 duration-100 uppercase font-semibold">Buy</button>
+                </div>
+            </div>
+            
+
+        </div>
+       
+    </div>
+    <script src="./cart.js"></script>
+</body>
+</html>
