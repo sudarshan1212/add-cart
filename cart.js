@@ -16,7 +16,14 @@ removewhite=document.querySelector('#removewhite')
 cartList=document.querySelector('#cartList')
 Button=document.querySelector('#Button')
 addBlack.innerText="add to cart"
+const headbar=document.querySelectorAll('.headbar')
 // console.log(cartList.children);
+console.log(headbar);
+// headbar.addEventListener('click',()=>{
+//     alert('hi')
+// }
+  
+// )
 
 let count=0
 function show(){
@@ -138,6 +145,10 @@ function closes(elements) {
 }
 
 
+function click(){
+    alert("Hello! I am an alert box!!");
+}
+// click()
 
 
  /* let p=document.createElement('p')

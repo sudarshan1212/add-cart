@@ -11,10 +11,21 @@
 <body class=" ">
     <div class="bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-700 w-full p-3 h-full ">
         
-        <div class=" relative  flex justify-between  ">
+        <div class=" relative   flex justify-between    ">
       <div class="  uppercase font-bold text-4xl text-orange-500">jbl</div>
       <div>
+        <div  onclick="click()" class="flex mt-2 absolute right-80 fixed  list-none gap-20 justify-between  font-bold text-2xl text-orange-400  px-18">
+        <li onclick="click" class="headbar hover:text-orange-600 hover:scale-100 duration-100">Speakers</li>
+        <li  class="headbar hover:text-orange-700 hover:scale-100 duration-100">Headphone</li> 
+        <li onclick="click()" class="headbar hover:text-orange-700 hover:scale-100 duration-100">Soundbar</li>
+        <li onclick="click()" class="headbar hover:text-orange-700 hover:scale-100 duration-100">True wire less Earbuds</li> 
+            
+      
+           
+        </div>
+        
         <div id="cart" onclick="popup()" class=" fixed right-5 flex gap-1 bg-white w-25  p-2 rounded-lg shadow-l hover:scale-105 duration-75">
+           
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
             </svg>
@@ -34,15 +45,18 @@
         </div> -->
        
     </div>
-          
-        <div class="grid grid-cols-2 gap-4   mt-5  mx-auto my-5 flex gap-3 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-xl ">
+    <!-- <h1 class="bg-white"> headphones</h1> -->
+        <div class="grid grid-rows-3 grid-cols-4 gap-4   mt-5  mx-auto my-5 flex gap-3 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-xl ">
+           
             <div class=" border-2 w-3/3 h-50 shadow-lg">
                 <div class="items-center flex justify-center rounded-lg  bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-700 shadow-lg">
                     <img class="" src="./images/favorite-1.png" alt="" srcset="">
                 </div>
            
                 <div class="bg-slate-900 rounded-lg h-2/2 bg-slate-50 w-3/3 p-3 ">
-                   <h1 class="text-orange-500 font-semibold text-2xl flex mx-3 py-3 justify-center">JBL Black</h1>
+                   <h1 class="text-orange-500 font-semibold text-2xl flex mx-3 py-3 justify-center hover:text-orange-600 active:text-orange-900">
+                    <a href="./black.html" target="_blank" >JBL Black</a>
+                   </h1>
                   <p class=" text-orange-500 px-3 font-thin text-l text-center">MRP ₹59900.00 (Incl. of all taxes)</p>
                   <div id="Button" class="flex justify-center mt-5 px-2">
                     <!-- <button id="addBlack" onclick="jblBlack()" class="add cart-btn hover:scale-105 border-2 p-2 bg-orange-200 rounded-lg hover:bg-orange-300 border-amber-500 duration-100 uppercase font-semibold">Add to Cart</button> -->
@@ -59,7 +73,9 @@
                 </div>
            
                 <div class="bg-slate-900  h-2/2  w-3/3 p-3 ">
-                   <h1 class="text-orange-500 font-semibold text-2xl flex mx-3 py-3 justify-center">JBL RED</h1>
+                   <h1 class="text-orange-500 font-semibold text-2xl flex mx-3 py-3 justify-center">
+                    <a href="./red.html" target="_blank" >JBL RED</a>
+                   </h1>
                   <p class="text-orange-500 px-3 font-thin text-l text-center">MRP ₹59900.00 (Incl. of all taxes)</p>
                   <div class="flex justify-center mt-5 px-2">
                     <button id="addRed" onclick="jblRed()" class="add cart-btn hover:scale-105 border-2 p-2 bg-orange-500 rounded-lg hover:bg-orange-600 text-white border-amber-700 duration-100 uppercase font-semibold">Add to Cart</button>
@@ -73,7 +89,7 @@
                 </div>
            
                 <div class=" bg-slate-900 h-2/2 bg-slate-50 w-3/3 p-3 ">
-                   <h1 class="text-orange-500 font-semibold text-2xl flex mx-3 py-3 justify-center">JBL BLUE</h1>
+                   <h1 class="text-orange-500 font-semibold text-2xl flex mx-3 py-3 justify-center"><a href="./lavender.html" target="_blank" >JBL BLUE</a></h1>
                   <p class="text-orange-500 px-3 font-thin text-l text-center">MRP ₹59900.00 (Incl. of all taxes)</p>
                   <div class="flex  mt-5 px-2 items-center justify-center">
                     <!-- <button class="hover:scale-105 border-2 p-2 rounded-lg  border-amber-500 hover:bg-orange-300 bg-orange-200  duration-100 uppercase font-semibold">buy now</button> -->
@@ -83,13 +99,15 @@
                   </div>
                 </div>
             </div>
+            
             <div class="  border-2 w-3/3 h-50 shadow-lg ">
+               
                 <div class="rounded-lg  bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-700 shadow-lg flex justify-center">
                     <img class="" src="./images/favorite-2.png" alt="" srcset="">
                 </div>
            
                 <div class="bg-slate-900 h-2/2 bg-slate-50 w-3/3 p-3 ">
-                   <h1 class="text-orange-500 font-semibold text-2xl flex mx-3 py-3 justify-center">JBL WHITE</h1>
+                   <h1 class="text-orange-500 font-semibold text-2xl flex mx-3 py-3 justify-center"><a href="./white.html" target="_blank" >JBL WHITE</a></h1>
                   <p class="text-orange-500 px-3 font-thin text-l text-center">MRP ₹59900.00 (Incl. of all taxes)</p>
                   <div class="flex  mt-5 px-2 items-center justify-center">
                     <!-- <button class="hover:scale-105 border-2 p-2 rounded-lg  border-amber-500 hover:bg-orange-300 bg-orange-200  duration-100 uppercase font-semibold">buy now</button> -->
@@ -99,6 +117,136 @@
                   </div>
                 </div>
             </div>
+            <div class="  border-2 w-3/3 h-50 shadow-lg ">
+                <div class="rounded-lg  bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-700 shadow-lg flex justify-center">
+                    <img class="" src="https://in.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwb7080881/01.JBL_Tune%20Buds_Product%20Image_Hero_Blue.png?sw=300&sh=300" alt="" srcset="">
+                </div>
+           
+                <div class="bg-slate-900 h-2/2 bg-slate-50 w-3/3 p-3 ">
+                   <h1 class="text-orange-500 font-semibold text-2xl flex mx-3 py-3 justify-center"><a href="./bluetooth.html" target="_blank" >JBL Tune Buds</a></h1>
+                  <p class="text-orange-500 px-3 font-thin text-l text-center">MRP ₹59900.00 (Incl. of all taxes)</p>
+                  <div class="flex  mt-5 px-2 items-center justify-center">
+                    <!-- <button class="hover:scale-105 border-2 p-2 rounded-lg  border-amber-500 hover:bg-orange-300 bg-orange-200  duration-100 uppercase font-semibold">buy now</button> -->
+                    <button id="addWhite" onclick="jblWhite()" class="cart-btn hover:scale-105 border-2 p-2 bg-orange-500 rounded-lg text-white hover:bg-orange-600 border-amber-700 duration-100 uppercase font-semibold">Add to Cart</button>
+                    <button id="removewhite" onclick="removerWhite()" class="hidden cart-btn hover:scale-105 border-2 p-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 border-amber-700 duration-100 uppercase font-semibold">Remove from  Cart</button>
+
+                  </div>
+                </div>
+            </div>
+            <div class="  border-2 w-3/3 h-50 shadow-lg ">
+                <div class="rounded-lg  bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-700 shadow-lg flex justify-center">
+                    <img class="" src="https://in.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw594515d5/01.JBL_Tune%20Beam_Product%20Image_Hero_White.png?sw=300&sh=300" alt="" srcset="">
+                </div>
+           
+                <div class="bg-slate-900 h-2/2 bg-slate-50 w-3/3 p-3 ">
+                   <h1 class="text-orange-500 font-semibold text-2xl flex mx-3 py-3 justify-center"><a href="./bluetooth.html" target="_blank" >JBL Tune Beam</a></h1>
+                  <p class="text-orange-500 px-3 font-thin text-l text-center">MRP ₹59900.00 (Incl. of all taxes)</p>
+                  <div class="flex  mt-5 px-2 items-center justify-center">
+                    <!-- <button class="hover:scale-105 border-2 p-2 rounded-lg  border-amber-500 hover:bg-orange-300 bg-orange-200  duration-100 uppercase font-semibold">buy now</button> -->
+                    <button id="addWhite" onclick="jblWhite()" class="cart-btn hover:scale-105 border-2 p-2 bg-orange-500 rounded-lg text-white hover:bg-orange-600 border-amber-700 duration-100 uppercase font-semibold">Add to Cart</button>
+                    <button id="removewhite" onclick="removerWhite()" class="hidden cart-btn hover:scale-105 border-2 p-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 border-amber-700 duration-100 uppercase font-semibold">Remove from  Cart</button>
+
+                  </div>
+                </div>
+            </div>
+            <div class="  border-2 w-3/3 h-auto shadow-lg ">
+                <div class="rounded-lg  bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-700 shadow-lg flex justify-center">
+                    <img class="" src="https://in.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw5497d96a/1.JBL_Wave_Vibe_Beam_Product%20Image_Hero_Black.png?sw=300&sh=300" alt="" srcset="">
+                </div>
+          
+                <div class="bg-slate-900 h-auto bg-slate-50 w-3/3 p-3 ">
+                   <h1 class="text-orange-500 font-semibold text-2xl flex mx-3 py-3 justify-center h-auto"><a href="./bluetooth.html" target="_blank" >JBL Tune Beam</a></h1>
+                  <p class="text-orange-500 px-3 font-thin text-l text-center">MRP ₹59900.00 (Incl. of all taxes)</p>
+                  <div class="flex  mt-5 px-2 items-center justify-center">
+                    <!-- <button class="hover:scale-105 border-2 p-2 rounded-lg  border-amber-500 hover:bg-orange-300 bg-orange-200  duration-100 uppercase font-semibold">buy now</button> -->
+                    <button id="addWhite" onclick="jblWhite()" class="cart-btn hover:scale-105 border-2 p-2 bg-orange-500 rounded-lg text-white hover:bg-orange-600 border-amber-700 duration-100 uppercase font-semibold">Add to Cart</button>
+                    <button id="removewhite" onclick="removerWhate()" class="hidden cart-btn hover:scale-105 border-2 p-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 border-amber-700 duration-100 uppercase font-semibold">Remove from  Cart</button>
+
+                  </div>
+                </div>
+            </div>
+            <div class="  border-2 w-3/3 h-50 shadow-lg ">
+                <div class="rounded-lg  bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-700 shadow-lg flex justify-center">
+                    <img class="" src="https://in.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw8715c5b5/1.JBL_TUNE_235NC_Product%20image_Hero_Black.png?sw=300&sh=300" alt="" srcset="">
+                </div>
+           
+                <div class="bg-slate-900 h-2/2 bg-slate-50 w-3/3 p-3 ">
+                   <h1 class="text-orange-500 font-semibold text-2xl flex mx-3 py-3 justify-center"> <a href="./bluetooth.html" target="_blank" >JBL Tune 235NC TWS</a></h1>
+                  <p class="text-orange-500 px-3 font-thin text-l text-center">MRP ₹6,299.00 (Incl. of all taxes)</p>
+                  <div class="flex  mt-5 px-2 items-center justify-center">
+                    <!-- <button class="hover:scale-105 border-2 p-2 rounded-lg  border-amber-500 hover:bg-orange-300 bg-orange-200  duration-100 uppercase font-semibold">buy now</button> -->
+                    <button id="addWhite" onclick="jblWhite()" class="cart-btn hover:scale-105 border-2 p-2 bg-orange-500 rounded-lg text-white hover:bg-orange-600 border-amber-700 duration-100 uppercase font-semibold">Add to Cart</button>
+                    <button id="removewhite" onclick="removerWhite()" class="hidden cart-btn hover:scale-105 border-2 p-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 border-amber-700 duration-100 uppercase font-semibold">Remove from  Cart</button>
+
+                  </div>
+                </div>
+            </div>
+            <div class="  border-2 w-3/3 h-50 shadow-lg ">
+                <div class="rounded-lg  bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-700 shadow-lg flex justify-center">
+                    <img class="" src="https://in.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw9fb58ef0/1_JBL_FLIP6_HERO_BLACK_29391_x2.png?sw=535&sh=535" alt="" srcset="">
+                </div>
+           
+                <div class="bg-slate-900 h-2/2 bg-slate-50 w-3/3 p-3 ">
+                   <h1 class="text-orange-500 font-semibold text-2xl flex mx-3 py-3 justify-center"><a href="./speaker.html" target="_blank" >JBL Tune Buds</a></h1>
+                  <p class="text-orange-500 px-3 font-thin text-l text-center">MRP ₹59900.00 (Incl. of all taxes)</p>
+                  <div class="flex  mt-5 px-2 items-center justify-center">
+                    <!-- <button class="hover:scale-105 border-2 p-2 rounded-lg  border-amber-500 hover:bg-orange-300 bg-orange-200  duration-100 uppercase font-semibold">buy now</button> -->
+                    <button id="addWhite" onclick="jblWhite()" class="cart-btn hover:scale-105 border-2 p-2 bg-orange-500 rounded-lg text-white hover:bg-orange-600 border-amber-700 duration-100 uppercase font-semibold">Add to Cart</button>
+                    <button id="removewhite" onclick="removerWhite()" class="hidden cart-btn hover:scale-105 border-2 p-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 border-amber-700 duration-100 uppercase font-semibold">Remove from  Cart</button>
+
+                  </div>
+                </div>
+            </div>
+            <div class="  border-2 w-3/3 h-50 shadow-lg ">
+                <div class="rounded-lg  bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-700 shadow-lg flex justify-center">
+                    <img class="" src="https://in.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw41368c09/1_JBL_PARTYBOX_110_HERO_x2.png?sw=535&sh=535" alt="" srcset="">
+                </div>
+           
+                <div class="bg-slate-900 h-2/2 bg-slate-50 w-3/3 p-3 ">
+                   <h1 class="text-orange-500 font-semibold text-2xl flex mx-3 py-3 justify-center"><a href="./speaker.html" target="_blank" >JBL Tune Buds</a></h1>
+                  <p class="text-orange-500 px-3 font-thin text-l text-center">MRP ₹59900.00 (Incl. of all taxes)</p>
+                  <div class="flex  mt-5 px-2 items-center justify-center">
+                    <!-- <button class="hover:scale-105 border-2 p-2 rounded-lg  border-amber-500 hover:bg-orange-300 bg-orange-200  duration-100 uppercase font-semibold">buy now</button> -->
+                    <button id="addWhite" onclick="jblWhite()" class="cart-btn hover:scale-105 border-2 p-2 bg-orange-500 rounded-lg text-white hover:bg-orange-600 border-amber-700 duration-100 uppercase font-semibold">Add to Cart</button>
+                    <button id="removewhite" onclick="removerWhite()" class="hidden cart-btn hover:scale-105 border-2 p-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 border-amber-700 duration-100 uppercase font-semibold">Remove from  Cart</button>
+
+                  </div>
+                </div>
+            </div>
+            <div class="  border-2 w-3/3 h-50 shadow-lg ">
+                <div class="rounded-lg  bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-700 shadow-lg flex justify-center">
+                    <img class="" src="https://in.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw2d538901/JBLBar2p1DeepBassMK2_1605x1605_WEB_HERO.png?sw=535&sh=535" alt="" srcset="">
+                </div>
+           
+                <div class="bg-slate-900 h-2/2 bg-slate-50 w-3/3 p-3 ">
+                   <h1 class="text-orange-500 font-semibold text-2xl flex mx-3 py-3 justify-center"><a href="./speaker.html" target="_blank" >JBL Tune Buds</a></h1>
+                  <p class="text-orange-500 px-3 font-thin text-l text-center">MRP ₹59900.00 (Incl. of all taxes)</p>
+                  <div class="flex  mt-5 px-2 items-center justify-center">
+                    <!-- <button class="hover:scale-105 border-2 p-2 rounded-lg  border-amber-500 hover:bg-orange-300 bg-orange-200  duration-100 uppercase font-semibold">buy now</button> -->
+                    <button id="addWhite" onclick="jblWhite()" class="cart-btn hover:scale-105 border-2 p-2 bg-orange-500 rounded-lg text-white hover:bg-orange-600 border-amber-700 duration-100 uppercase font-semibold">Add to Cart</button>
+                    <button id="removewhite" onclick="removerWhite()" class="hidden cart-btn hover:scale-105 border-2 p-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 border-amber-700 duration-100 uppercase font-semibold">Remove from  Cart</button>
+
+                  </div>
+                </div>
+            </div>
+            <div class="  border-2 w-3/3 h-50 shadow-lg ">
+                <div class="rounded-lg  bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-700 shadow-lg flex justify-center">
+                    <img class="" src="https://in.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwca419545/JBL_CHARGE5_HERO_BLACK_0046_x1.png?sw=535&sh=535" alt="" srcset="">
+                </div>
+           
+                <div class="bg-slate-900 h-2/2 bg-slate-50 w-3/3 p-3 ">
+                   <h1 class="text-orange-500 font-semibold text-2xl flex mx-3 py-3 justify-center"><a href="./speaker.html" target="_blank" >JBL Tune Buds</a></h1>
+                  <p class="text-orange-500 px-3 font-thin text-l text-center">MRP ₹59900.00 (Incl. of all taxes)</p>
+                  <div class="flex  mt-5 px-2 items-center justify-center">
+                    <!-- <button class="hover:scale-105 border-2 p-2 rounded-lg  border-amber-500 hover:bg-orange-300 bg-orange-200  duration-100 uppercase font-semibold">buy now</button> -->
+                    <button id="addWhite" onclick="jblWhite()" class="cart-btn hover:scale-105 border-2 p-2 bg-orange-500 rounded-lg text-white hover:bg-orange-600 border-amber-700 duration-100 uppercase font-semibold">Add to Cart</button>
+                    <button id="removewhite" onclick="removerWhite()" class="hidden cart-btn hover:scale-105 border-2 p-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 border-amber-700 duration-100 uppercase font-semibold">Remove from  Cart</button>
+
+                  </div>
+                </div>
+            </div>
+            
+
             
         </div>
         <div id="cartbox" class="hidden  fixed top-0 left-0 w-full h-screen bg-black/50 flex items-center justify-center ">
@@ -124,6 +272,6 @@
         </div>
        
     </div>
-    <script src="./cart.js"></script>
+    <script src="./cart.js" ></script>
 </body>
 </html>
